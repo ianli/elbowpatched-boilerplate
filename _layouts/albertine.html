@@ -31,7 +31,7 @@ It is threatened by habitat loss.
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/albertine/css/default.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/albertine/css/default.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -61,7 +61,7 @@ It is threatened by habitat loss.
           </h2>
         </div>
         <div class="col-xs-3 col-lg-3">
-          <img src="{{ site.data.personal.picture }}" 
+          <img src="{{ site.baseurl }}{{ site.data.personal.picture }}" 
                class="img-circle"
                style="margin-top:-6px;width:56px;border:2px solid rgba(255,255,255,0.75)">
         </div>
@@ -181,7 +181,7 @@ It is threatened by habitat loss.
                     col-md-3
                     col-lg-2">
           <p>
-            <img src="{{ project.image }}" 
+            <img src="{{ site.baseurl }}{{ project.image }}" 
                  class="img-responsive img-thumbnail"
                  style="width:100%">
           </p>
