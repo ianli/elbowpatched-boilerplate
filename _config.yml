@@ -1,2 +1,5 @@
 # Build settings
 markdown: kramdown
+
+# http://jekyllrb.com/docs/github-pages/#project-page-url-structure
+baseurl: /elbowpatched-boilerplate
