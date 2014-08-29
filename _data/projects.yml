@@ -1,0 +1,67 @@
+-
+  name: 'Personal Informatics &amp; Context: Using Context to Reveal Factors that Affect Behavior'
+  description: >
+    My Ph.D. thesis explores the use of contextual information in personal informatics systems to help users understand the factors that affect their behavior. 
+    Most personal informatics systems only show one type of behavioral information, which makes it difficult to discover the factors that affect one's behavior. 
+    Supporting exploration of multiple types of contextual and behavioral information in a single interface may help.
+  image: /img/phd-thesis.png
+  url: http://ianli.com/thesis/
+-
+  name: Model of Personal Informatics Systems
+  description: >
+    This is a model of personal informatics systems that we hope would be valuable for research and development. 
+    It provides a common framework for describing, comparing, and evaluating the growing number of this class of systems. 
+    This model is composed of five stages (preparation, collection, integration, reflection, and action). 
+    These stages have four properties: barriers cascade to later stages; they are iterative; 
+    they are user-driven and/or system-driven; and they are uni-faceted or multi-faceted.
+  image: /img/pi-model.png
+-
+  name: IMPACT
+  description: >
+    IMPACT, Improving and Motivating Physical Activity using ContexT, is a system that monitors and informs users about their physical activity and the context in which the activities happen. 
+    The system shows real-time information on a phone interface and historical information on a desktop and online interface. 
+    By contextualizing physical activity, the system increases users' awareness of their physical activity.
+  image: /img/impact.jpg
+-
+  name: ActionShot / CoScripter Reusable History
+  description: >
+    CoScripter Reusable History records everything you do on the web and captures a log of your web browsing activity. You can review your CoScripter history to find actions that you do often, convert sequences of actions into reusable scripts, and share them with your friends.
+  image: /img/actionshot.jpg
+  url: https://www.youtube.com/watch?v=TyQPwPgbRZQ
+-
+  name: ES+Feedback
+  description: >
+    ES+Feedback extends the experience sampling method by providing feedback/visualizations of the users' collected responses. 
+    During a one month study of the method with 25 participants, 
+    we found that participants who saw visualizations maintained the same level of participation, 
+    while those who didn't see visualizations decreased.
+  image: /img/es-feedback.jpg
+-
+  name: My Agent as Myself
+  description: >
+    My Agent as Myself studies what happens when users interact with embodied conversational agents that look like them. 
+    Would users follow the agents' advice? Users in the study created faces for agents, one that resembled them and one that is suitable for providing feedback. 
+    We found when someone else created the faces, users listened more to faces that resembled them. 
+    However, when users created the faces, they listened less to their own face.
+  image: /img/my-agent-as-myself.png
+-
+  name: Grafitter
+  description: >
+    Grafitter facilitates collection of personal information by leveraging people's everyday use of Twitter. 
+    Users can explore their Twitter updates for patterns and trends using Grafitter visualizations.
+  image: /img/grafitter.png
+-
+  name: MoodJam
+  description: >
+    MoodJam is a website that allows users to record their moods and share them with friends and family. 
+    Users record their moods with words and color combinations, which are visualized as color strips. 
+    The site serves as a mood diary for users to reflect on trends of their moods and on colors they associate with specific moods. 
+    The site also serves as an awareness tool for users to keep in touch with friends and family.
+  image: /img/moodjam.png
+  url: http://www.moodjam.com/
+-
+  name: Office Activity Awareness
+  description: >
+    Keeping track of one's activities detracts from actual work, but awareness of activities can help in managing productivity. 
+    I created a system that tracks activities around the work table and correlated them with self-reported measurements of productivity.
+  image: /img/office-activity-awareness.jpg
