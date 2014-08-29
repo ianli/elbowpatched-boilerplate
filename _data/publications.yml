@@ -1,0 +1,66 @@
+-
+  type: journal
+  title: Using context to reveal factors that affect physical activity
+  authors: Ian Li, Anind K. Dey, Jodi Forlizzi
+  journal: ACM Transactions on Computer Human Interaction
+  volume: 19 
+  issue: 1
+  year: 2012
+  month: March
+  pdf: http://www.personalinformatics.org/docs/papers/2012-ianli-tochi-physical-activity.pdf
+  url: http://dl.acm.org/citation.cfm?id=2147783.2147790
+-
+  type: dissertation
+  title: "Personal Informatics and Context: Using Context to Reveal Factors that Affect Behavior"
+  authors: Ian Li
+  year: 2011
+  publisher: Carnegie Mellon University
+  pdf: http://ianli.com/thesis/docs/dissertation.pdf
+  url: http://dl.acm.org/citation.cfm?id=2520311
+-
+  type: conference
+  title: "Understanding My Data, Myself: Supporting Self-Reflection with Ubicomp Technologies"
+  authors: Ian Li, Anind Dey, Jodi Forlizzi
+  conference: Proceedings of UbiComp 2011
+  year: 2011
+  pages: 405-414
+  pdf: http://ianli.com/publications/2011-ianli-ubicomp-understanding-my-data.pdf
+  url: http://dl.acm.org/citation.cfm?id=2030166
+-
+  type: conference
+  title: A stage-based model of personal informatics systems
+  authors: Ian Li, Anind Dey, Jodi Forlizzi
+  year: 2010
+  conference: Proceedings of CHI 2010
+  pages: 557-566
+  pdf: http://ianli.com/publications/2010-ianli-chi-stage-based-model.pdf
+  url: http://dl.acm.org/citation.cfm?id=1753326.1753409
+- 
+  type: conference
+  title: "Here's What I Did: Sharing and Reusing Web Activity with ActionShot"
+  authors: Ian Li, Jeffrey Nichols, Tessa Lau, Clemens Drews, Allen Cypher
+  conference: Proceedings of CHI 2010
+  year: 2010
+  pages: 723-732
+  pdf: http://ianli.com/publications/2010-ianli-chi-actionshot.pdf
+  url: http://dl.acm.org/citation.cfm?id=1753326.1753432
+-
+  type: magazine
+  title: "Grafitter: leveraging social media for self reflection"
+  authors: Ian Li, Anind Dey, Jodi Forlizzi
+  magazine: Crossroads
+  volume: 16
+  issue: 2
+  year: 2009
+  pages: 12-13
+  url: http://dl.acm.org/citation.cfm?id=1665997.1666001
+  pdf: http://ianli.com/publications/2009-ianli-crossroads-grafitter.pdf
+-
+  type: conference
+  title: Using Visualizations to Increase Compliance in Experience Sampling
+  authors: Gary Hsieh, Ian Li, Anind Dey, Jodi Forlizzi, Scott Hudson
+  conference: Proceedings of UbiComp 2008
+  year: 2008
+  pages: 164-167
+  pdf: http://ianli.com/publications/2008-hsieh-ubicomp-using-visualizations.pdf
+  url: http://portal.acm.org/citation.cfm?id=1409635.1409657

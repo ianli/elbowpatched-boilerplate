@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<!--
+
+Albertine 0.1
+An Elbowpatched theme
+
+(c) 2014 Ian Li (http://ianli.com)
+
+####
+
+Albertine owlet
+http://en.wikipedia.org/wiki/Albertine_owlet
+
+The Albertine owlet (Glaucidium albertinum) is a species of owl in the Strigidae family. 
+It is found in Democratic Republic of the Congo and Rwanda. 
+Its natural habitat is subtropical or tropical moist montane forests. 
+It is threatened by habitat loss.
+
+-->
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ site.data.personal.name }}</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/albertine/css/default.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Javascript -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body class="intro-screen">
+
+  <!-- ==================== -->
+  <!-- HEADER -->
+  <!-- ==================== -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-9 col-lg-9">
+          <h1>
+            {{ site.data.personal.name }}
+          </h1>
+          <h2>
+            {{ site.data.personal.label }}
+          </h2>
+        </div>
+        <div class="col-xs-3 col-lg-3">
+          <img src="{{ site.data.personal.picture }}" 
+               class="img-circle"
+               style="margin-top:-6px;width:56px;border:2px solid rgba(255,255,255,0.75)">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== -->
+  <!-- SECTION -->
+  <!-- ==================== -->
+  <div class="container"
+           id="section-about">
+    <div class="row">
+      <section class="col-md-8">
+        {% if site.data.personal.intro.title %}
+          <h3 style="font-size:48px">
+            {{ site.data.personal.intro.title }}
+          </h3>
+        {% else %}
+          <h3>
+            About
+          </h3>
+        {% endif %}
+
+        <div class="lead">
+          {{ site.data.personal.intro.body | markdownify }}
+        </div>
+        
+      </section>
+      <section class="col-md-offset-1 col-md-3">
+        <h3>Contact</h3>
+        <p>
+          {{ site.data.personal.email | replace:'@',' <small>[at]</small> ' | replace:'.',' <small>[dot]</small> ' }}
+        </p>
+        <p>
+          {{ site.data.personal.department }}<br>
+          {{ site.data.personal.institution }}<br>
+          {{ site.data.personal.mailing_address | replace:'\n','<br>' }}
+        </p>
+
+        <p>
+          {% for profile in site.data.personal.profiles %}
+            
+            {% if profile.network == 'Google Scholar' %}
+              <i class="fa fa-google"></i>
+            {% elsif profile.network == 'LinkedIn' %}
+              <i class="fa fa-linkedin-square"></i>
+            {% elsif profile.network == 'Twitter' %}
+              <i class="fa fa-twitter-square"></i>
+            {% endif %}
+            <a href="{{ profile.url }}">
+              {{ profile.network }}
+            </a>
+            {% if forloop.last == false %}
+              <br>
+            {% endif %}
+          {% endfor %}
+        </p>
+      </section>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <section class="col-md-9">
+        <h3>Publications</h3>
+
+        {% for publication in site.data.publications %}
+          <p>
+            <b>
+              <a href="{{ publication.pdf }}">
+                {{ publication.title }}
+              </a>
+            </b>
+            <small>
+              {{ publication.year }}
+            </small>
+            <br>
+            {{ publication.authors }}
+            <br>
+            {% case publication.type %}
+              {% when 'conference' %}
+                {{ publication.conference }}
+              {% when 'dissertation' %}
+                {{ publication.publisher }}
+              {% when 'journal' %}
+                {{ publication.journal }},
+                {{ publication.volume }},
+                {{ publication.issue }},
+                {{ publication.pages }}
+              {% when 'magazine' %}
+                {{ publication.magazine }},
+                {{ publication.volume }},
+                {{ publication.issue }},
+                {{ publication.pages }}
+            {% endcase %}
+          </p>
+        {% endfor %}
+      </section>
+    </div>
+  </div>
+
+  <!-- ==================== -->
+  <!-- PROJECTS -->
+  <!-- ==================== -->
+  <section class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <h3>Projects</h3>
+      </div>
+    </div>
+
+    {% for project in site.data.projects %}
+      <div class="row">
+        <div class="col-xs-4
+                    col-sm-3
+                    col-md-3
+                    col-lg-2">
+          <p>
+            <img src="{{ project.image }}" 
+                 class="img-responsive img-thumbnail"
+                 style="width:100%">
+          </p>
+        </div>
+        <div class="col-xs-12
+                    col-sm-9
+                    col-md-6
+                    col-lg-7">
+          <p>
+            <b>
+              {% if project.url %}
+                <a href="{{ project.url }}">
+                  {{ project.name }}
+                </a>
+              {% else %}
+                {{ project.name }}
+              {% endif %}
+            </b>
+          </p>
+
+          {{ project.description | markdownify }}
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+
+  <!-- ==================== -->
+  <!-- PRESENTATIONS -->
+  <!-- ==================== -->
+  <section class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <h3>Presentations</h3>
+      </div>
+    </div>
+
+    {% for presentation in site.data.presentations %}
+      <div class="row">
+        <div class="col-md-9">
+          <p>
+            <b>
+              {% if presentation.slides_url %}
+                <a href="{{ presentation.slides_url }}">
+                  {{ presentation.title }}
+                </a>
+              {% else %}
+                {{ presentation.title }}
+              {% endif %}
+            </b>
+            <small>
+              {{ presentation.date }}
+            </small>
+            <br>
+            {{ presentation.location }}
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+
+  <!-- ==================== -->
+  <!-- FOOTER -->
+  <!-- ==================== -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">          
+          <img src="/img/elbowpatched-icon.svg" alt="Elbowpatched"
+               style="float:left;margin-right:5px;width:20px;height:20px;">
+          Powered by 
+          <a href="http://www.elbowpatched.com">
+            Elbowpatched
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== -->
+  <!-- JAVASCRIPTS -->
+  <!-- ==================== -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#section-about').waypoint(function (direction) {
+        if (direction === 'down') {
+          $('body').removeClass('intro-screen');
+        } else {
+          $('body').addClass('intro-screen');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
