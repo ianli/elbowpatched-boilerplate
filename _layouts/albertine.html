@@ -124,6 +124,7 @@ It is threatened by habitat loss.
     </div>
   </div>
 
+  {% if site.data.publications.any? %}
   <div class="container">
     <div class="row">
       <section class="col-md-9">
@@ -163,7 +164,9 @@ It is threatened by habitat loss.
       </section>
     </div>
   </div>
+  {% endif %}
 
+  {% if site.data.projects.any? %}
   <!-- ==================== -->
   <!-- PROJECTS -->
   <!-- ==================== -->
@@ -207,7 +210,9 @@ It is threatened by habitat loss.
       </div>
     {% endfor %}
   </section>
+  {% endif %}
 
+  {% if site.data.presentations.any? %}
   <!-- ==================== -->
   <!-- PRESENTATIONS -->
   <!-- ==================== -->
@@ -241,6 +246,7 @@ It is threatened by habitat loss.
       </div>
     {% endfor %}
   </section>
+  {% endif %}
 
   <!-- ==================== -->
   <!-- FOOTER -->
