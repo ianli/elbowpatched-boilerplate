@@ -37,7 +37,7 @@ It has the following features that make it easier to create an academic personal
   * `publications.yml` - Bibliography of your publications
   * `projects.yml` - Descriptions of your projects with pictures
   * `presentations.yml` - Your presentations with links to slides
-* Preview your website at `example.html`
+* Preview your website at `index.html`
 
 
 ## Layouts
